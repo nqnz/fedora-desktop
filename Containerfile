@@ -4,8 +4,8 @@ COPY build_files /
 COPY repo_files /repo_files
 
 # Base Image
-FROM ghcr.io/ublue-os/bluefin:stable
-
+#FROM ghcr.io/ublue-os/bluefin:stable
+FROM ghcr.io/ublue-os/silverblue-main
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
