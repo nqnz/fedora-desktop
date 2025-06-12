@@ -23,7 +23,7 @@ dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python
 #flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Install all listed flatpaks
-xargs -a /ctx/repo_files/flatpak flatpak install -y --noninteractive
+#xargs -a /ctx/repo_files/flatpak flatpak install -y --noninteractive
 
 
 # Brew programs
