@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python3-pip samba restic rclone nerd-fonts gcc atuin bat croc gh tealdeer yq snapd
+dnf5 install -y tmux mpv wl-clipboard wireguard-tools stress-ng python3-pip samba restic rclone nerd-fonts gcc atuin bat croc gh tealdeer yq snapd
 
 # Use a COPR Example:
 #
@@ -24,5 +24,5 @@ install -Dm644 /ctx/repo_files/flatpaks /usr/share/ublue-os/flatpaks
 
 #### Example for enabling a System Unit File
 systemctl enable podman.socket
-systemctl enable tailscaled.service
+#systemctl enable tailscaled.service
 systemctl --global enable podman-auto-update.timer
