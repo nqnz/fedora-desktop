@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python3-pip samba restic rclone nerd-fonts gcc 
+dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python3-pip samba restic rclone nerd-fonts gcc atuin bat croc gh tealdeer yq
 
 # Use a COPR Example:
 #
@@ -19,17 +19,7 @@ dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-# Setup remote if not already present
-#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-# Install all listed flatpaks
-#xargs -a /ctx/repo_files/flatpak flatpak install -y --noninteractive
-
 install -Dm644 /ctx/repo_files/flatpaks /usr/share/ublue-os/flatpaks
-
-# Brew programs
-
-#xargs brew install < /ctx/repo_files/brew
 
 
 #### Example for enabling a System Unit File
