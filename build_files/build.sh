@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python3-pip samba restic rclone nerd-fonts gcc atuin bat croc gh tealdeer yq
+dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python3-pip samba restic rclone nerd-fonts gcc atuin bat croc gh tealdeer yq snapd
 
 # Use a COPR Example:
 #
