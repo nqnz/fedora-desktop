@@ -25,6 +25,7 @@ dnf5 install -y tmux mpv wl-clipboard wireguard-tools tailscale stress-ng python
 # Install all listed flatpaks
 #xargs -a /ctx/repo_files/flatpak flatpak install -y --noninteractive
 
+install -Dm644 /ctx/repo_files/flatpaks /usr/share/ublue-os/flatpaks
 
 # Brew programs
 
