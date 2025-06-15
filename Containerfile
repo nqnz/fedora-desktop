@@ -6,6 +6,8 @@ COPY repo_files /repo_files
 # Base Image
 #FROM ghcr.io/ublue-os/bluefin:stable
 FROM ghcr.io/ublue-os/silverblue-main:latest
+
+RUN rpm-ostree install gnome-shell-extension-gsconnect
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
