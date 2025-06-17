@@ -24,7 +24,8 @@ nmap
 traceroute
 mtr
 ulauncher
-anisble
+ansible
+tailscale
 git
 stockfish
 texlive-scheme-tetex
