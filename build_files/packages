@@ -1,6 +1,5 @@
-distrobox
+baobab
 tmux
-stress-ng
 python3-pip
 samba
 restic
@@ -28,4 +27,3 @@ ansible
 tailscale
 git
 stockfish
-texlive-scheme-tetex
